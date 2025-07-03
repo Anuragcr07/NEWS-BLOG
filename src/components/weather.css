@@ -1,0 +1,109 @@
+.weather {
+    width: 100%;
+    min-width: 28rem;
+    height: 45%;
+    background-color: #111214;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.search-top {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.search-top i {
+    font-size: 2.5rem;
+    color: #ddd;
+}
+
+.location {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.search-location {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-location input {
+    width: clamp(15rem, 14vw, 25rem);
+    height: 4rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.1rem solid #aaa;
+    font-size: 1.5rem;
+    color: #ddd;
+    padding-right: 3rem; /* Ensures space for the button */
+    outline: none;
+}
+
+/* FIX: Button should be a real button, not an icon */
+.search-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto; /* Ensures clickability */
+}
+
+/* Ensure button changes on hover */
+.search-btn:hover {
+    color: #ffc87c;
+}
+
+.weather-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.weather-data i {
+    font-size: 5rem;
+    color: #ffc87c;
+}
+.weather-data i.bxs-cloud {
+    font-size: 5rem;
+    color: #fff;
+}
+.weather-data i.bxs-cloud-rain{
+    font-size: 5rem;
+    color: #5fd1f9;
+}
+.weather-data i.bxs-cloud-lightning {
+    font-size: 5rem;
+    color: #154abd;
+}
+.weather-data i.bxs-cloud-show {
+    font-size: 5rem;
+    color: #52e5e5;
+}
+
+.weather-type,
+.temp {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2rem;
+    color: #ddd;
+}

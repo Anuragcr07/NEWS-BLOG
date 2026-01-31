@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Calender.css"; // ✅ Correct spelling
+import "./calender.css"; // ✅ Correct spelling
 
 const Calendar = () => {
   const today = new Date();

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css';
+import './modal.css';
 import './Bookmark.css';
 
 const Bookmark = ({ show, bookmarks, onClose, onDeleteBookmark, onSelectArticle }) => {

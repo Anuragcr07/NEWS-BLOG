@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsModal.css';
+import './newsModal.css';
 import './Modal.css';
 
 const NewsModal = ({ show, article, onClose }) => {

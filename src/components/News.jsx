@@ -47,9 +47,9 @@ const News = ({ onShowBlog, blogs, onDeleteBlog }) => {
   // Fetch news
   useEffect(() => {
     const fetchNews = async () => {
-      let url = `https://gnews.io/api/v4/top-headlines?category=${selectedCategory}&q=example&apikey=67b19629d0239a9fafab93e10787ff93`;
+      let url = `https://gnews.io/api/v4/top-headlines?category=${selectedCategory}&lang=en&country=in&apikey=67b19629d0239a9fafab93e10787ff93`;
       if (searchQuery) {
-        url = `https://gnews.io/api/v4/search?q=${searchQuery}&apikey=67b19629d0239a9fafab93e10787ff93`;
+        url = `https://gnews.io/api/v4/search?q=${searchQuery}&lang=en&country=in&apikey=67b19629d0239a9fafab93e10787ff93`;
       }
       try {
         const response = await axios.get(url);

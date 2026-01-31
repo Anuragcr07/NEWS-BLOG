@@ -1,6 +1,6 @@
 import React from 'react';
 import './newsModal.css';
-import './Modal.css';
+import './modal.css';
 
 const NewsModal = ({ show, article, onClose }) => {
   if (!show) {
